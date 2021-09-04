@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router";
+import { Switch, Route, Redirect } from "react-router";
 import "./App.css";
 import About from "./components/about";
 import Nav from "./components/common/Nav";
@@ -28,6 +28,7 @@ function App() {
         <Route path="/support">
           <Volunteer />
         </Route>
+        <Redirect to="/home"></Redirect>
       </Switch>
     </div>
   );

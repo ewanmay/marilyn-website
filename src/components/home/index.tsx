@@ -1,9 +1,13 @@
 import React from "react";
-import { Switch, Route } from "react-router";
-import "./Home.css";
+import Hero from "./Hero";
+import "./Home.scss";
 
 function Home() {
-  return <div className="Home">Home</div>;
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 }
 
 export default Home;

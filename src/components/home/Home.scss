@@ -1,0 +1,40 @@
+.hero-container {
+  &.laptop {
+    min-height: calc(100vh - 74px - 3vh);
+  }
+
+  &.phone {
+    margin-top: 20px;
+    min-height: calc(100vh - 94px);
+  }
+
+  position: relative;
+}
+
+.hero-content {
+  &.laptop {
+    padding-bottom: 100px;
+  }
+  &.phone {
+    padding-bottom: 20px;
+  }
+}
+
+.hero-decoration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  left: 0;
+  height: 200px;
+  object-fit: cover;
+}
+
+.hero-image {
+  height: 90%;
+  object-fit: contain;
+  &.laptop {
+    position: absolute;
+    bottom: 0;
+  }
+}
