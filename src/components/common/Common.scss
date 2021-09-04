@@ -1,11 +1,36 @@
+@import "../../App.scss";
+
 .nav {
-  position: sticky;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+
+  a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 15px;
+    line-height: 18px;
+
+    &.active {
+      color: $yellow;
+    }
+  }
 }
 
-.nav-coming-soon {
-  height: 100%;
-  padding: 32.5px 22.5px 0 5px;
-line-height: 0;
-  display: flex;
-  align-content: center;
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: $white;
+}
+
+.nav-placeholder {
+  min-height: 35px;
+  width: 80vw;
 }

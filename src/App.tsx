@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router";
-import "./App.css";
+import "./App.scss";
 import About from "./components/about";
 import Nav from "./components/common/Nav";
 import Home from "./components/home";

@@ -1,0 +1,30 @@
+@import '../../App.scss';
+
+// -------------------------------
+//
+//            PARAGRAPH
+//
+// -------------------------------
+
+.paragraph {
+  .title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .body {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .left {
+    background-color: $light-blue;
+    color: $navy;
+  }
+
+  .right {
+    background-color: $navy;
+    color: $white;
+  }
+}

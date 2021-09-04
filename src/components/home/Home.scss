@@ -1,3 +1,13 @@
+.home {
+  align-content: initial;
+}
+
+// -------------------------------
+//
+//            HOME
+//
+// -------------------------------
+
 .hero-container {
   &.laptop {
     min-height: calc(100vh - 74px - 3vh);
@@ -36,5 +46,81 @@
   &.laptop {
     position: absolute;
     bottom: 0;
+  }
+}
+
+// -------------------------------
+//
+//            MESSAGE
+//
+// -------------------------------
+
+.message {
+  margin-top: 90px;
+}
+
+.message-title {
+  border: solid 9px #f5d810;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 29px;
+  line-height: 43px;
+}
+
+.message-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: left;
+}
+
+// -------------------------------
+//
+//            PRIORITIES
+//
+// -------------------------------
+
+.priorities {
+  background-color: rgba(167, 194, 255, 0.24);
+  padding: 17px 30px;
+  text-align: left;
+  margin: 25px 0;
+  .title {
+    font-weight: bold;
+    font-size: 21.7192px;
+    line-height: 33px;
+  }
+  .icon {
+    min-height: 30px;
+    min-width: 30px;
+    margin-right: 10px;
+  }
+  .body {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 10px 0;
+  }
+  .link {
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.priorities-list {
+  margin-top: 100px;
+
+  h4 {
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 46px;
+  }
+
+  .underline {
+    min-width: 166px;
+    min-height: 4px;
   }
 }
