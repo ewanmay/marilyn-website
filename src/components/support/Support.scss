@@ -1,0 +1,73 @@
+@import "../../App.scss";
+// -------------------------------
+//
+//            INPUT
+//
+// -------------------------------
+.inputs {
+  border-left: 3px solid $navy;
+  padding-left: 40px;
+}
+
+.input {
+  padding: 8px;
+  margin: 5px 0 20px 0;
+  border: solid 1px $navy;
+  width: 100%;
+  font-size: 14px;
+
+  &:focus-visible {
+    outline: solid 1px $navy;
+  }
+
+  &::placeholder {
+    font-size: 14px;
+  }
+}
+
+.input-container {
+  width: 100%;
+
+  .label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+// -------------------------------
+//
+//            TABS
+//
+// -------------------------------
+
+.tabs {
+  width: 100%;
+  font-size: 14px;
+  height: 100%;
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+  }
+  @media (max-width: 768px) {
+    flex-direction: row;
+  }
+
+  .tab {
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    min-width: 160px;
+    color: $navy;
+    background-color: $white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $light-blue;
+    }
+
+    &.active {
+      background-color: $navy;
+      color: $white;
+    }
+  }
+}

@@ -5,7 +5,7 @@ import About from "./components/about";
 import Nav from "./components/common/Nav";
 import Home from "./components/home";
 import Priorities from "./components/priorities";
-import Volunteer from "./components/volunteer";
+import Support from "./components/support";
 import Vote from "./components/vote";
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
           <Vote />
         </Route>
         <Route path="/support">
-          <Volunteer />
+          <Support />
         </Route>
         <Redirect to="/home"></Redirect>
       </Switch>
