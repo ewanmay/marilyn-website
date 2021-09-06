@@ -18,7 +18,7 @@ function PrioritiesList() {
     },
     {
       title: "Advocacy ",
-      text: "Marilyn will ensure that education funding is spent effectively to directly support student needs.",
+      text: "Marilyn will continue to listen and bring forward the voices of NE Calgary families to all levels of government to make sure that they are heard and respected.",
       icon: "/images/megaphone-dark.svg",
       link: "/priorities#advocacy",
     },
@@ -26,7 +26,9 @@ function PrioritiesList() {
 
   return (
     <div className="priorities-list">
-      <h4>Marilyn's Priorities <span className="underline by"/></h4>
+      <h4 className=" flex column center">
+        Marilyn's Priorities <span className="underline" />
+      </h4>
       {priorities.map((priority) => (
         <PrioritiesItem
           title={priority.title}

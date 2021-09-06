@@ -21,9 +21,9 @@ function Hero() {
         <div className="col-auto flex left column">
           <h4 className="rt bold">RE-ELECT</h4>
           <h1 className="nt bold">Marilyn Dennis</h1>
-          <h5 className="wt nb p-1">
-            On <b> Monday, October 18, 2021,</b> for
-          </h5>
+          <h4 className="wt nb p-1">
+            <b> Monday, October 18, 2021,</b>
+          </h4>
           <h5 className="bt bold">Public School Trustee, Wards 5 & 10</h5>
         </div>
       </div>

@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .home {
   align-content: initial;
 }
@@ -10,12 +12,12 @@
 
 .hero-container {
   &.laptop {
-    min-height: calc(100vh - 74px - 3vh);
+    min-height: calc(100vh - 100px - 3vh);
   }
 
   &.phone {
     margin-top: 20px;
-    min-height: calc(100vh - 94px);
+    min-height: calc(100vh - 130px);
   }
 
   position: relative;
@@ -60,7 +62,7 @@
 }
 
 .message-title {
-  border: solid 9px #f5d810;
+  border: solid 9px $yellow;
   padding: 10px 20px;
   font-weight: bold;
   margin-bottom: 30px;
@@ -120,7 +122,9 @@
   }
 
   .underline {
-    min-width: 166px;
-    min-height: 4px;
+    width: 166px;
+    height: 4px;
+    background-color: $yellow;
+    border-radius: 2px;
   }
 }
