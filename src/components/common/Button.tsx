@@ -1,7 +1,18 @@
 import React from "react";
 
-function Button() {
-  return <div className="flex space-between"><img src="/images/nav.svg"/></div>;
+export enum ButtonTypeE {
+  SOLID = 'solid',
+  OUTLINE = 'outline'
+}
+
+interface ButtonProps {
+  onClick: () => void,
+  text: string,
+  variant: ButtonTypeE
+}
+
+function Button({ text, onClick, variant }: ButtonProps) {
+  return <button className={variant} onClick={onClick}>{text}</button>;
 }
 
 export default Button;

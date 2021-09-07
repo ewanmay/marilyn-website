@@ -34,3 +34,14 @@
   min-height: 100px;
   width: 80vw;
 }
+
+button {
+  &.solid {
+    background-color: $navy;
+    color: $white;
+    font-weight: medium;
+    padding: 6px 15px;
+    border: none;
+    font-size: 14px;
+  }
+}

@@ -32,6 +32,12 @@
     font-size: 14px;
     font-weight: bold;
   }
+
+  .error {
+    font-size: 14px;
+    font-weight: normal;
+    color: $red;
+  }
 }
 
 // -------------------------------
@@ -69,5 +75,28 @@
       background-color: $navy;
       color: $white;
     }
+  }
+}
+
+// -------------------------------
+//
+//            HEADER
+//
+// -------------------------------
+
+.support-header {
+  width: 100%;
+  position: relative;
+  min-height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./support-header.svg');
+
+  .text {
+    padding: 6px 50px;
+    background-color: $white;
+    border-radius: 8px;
+    font-weight: bold;
   }
 }

@@ -1,25 +1,11 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import SupportHeader from "./Header";
-import Input from "./Input";
+import Input, { InputValidationE } from "./Input";
 import "./Support.scss";
 import Tabs, { SupportTabsE } from "./Tabs";
 import Sign from "./Sign";
 import Volunteer from "./Volunteer";
-
-const signRange = "A1:D1";
-const volunteerRange = "A1:F1";
-
-const appendSpreadsheet = async (
-  row: Record<string, string>,
-  tab: SupportTabsE
-) => {
-  const SPREADSHEET_ID = process.env.REACT_APP_SPREADSHEET_ID;
-  const SHEET_ID = process.env.REACT_APP_SHEET_ID;
-  const CLIENT_EMAIL = process.env.REACT_APP_GOOGLE_CLIENT_EMAIL;
-  const PRIVATE_KEY = process.env.REACT_APP_GOOGLE_SERVICE_PRIVATE_KEY;
-  const range = tab === SupportTabsE.SIGN ? signRange : volunteerRange;
-  const url = `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${range}:append`;
-};
+import Button, { ButtonTypeE } from "../common/Button";
 
 function Support() {
   const [name, setName] = useState("");
@@ -27,10 +13,42 @@ function Support() {
   const [address, setAddress] = useState("");
   const [message, setMessage] = useState("");
   const [tabSelection, setTabSelection] = useState(SupportTabsE.SIGN);
+  const nameRef = useRef()
+  const emailRef = useRef()
+  const addressRef = useRef()
+  const messageRef = useRef()
 
-  const getTab = () => {
-    return tabSelection === SupportTabsE.SIGN ? <Sign /> : <Volunteer />;
+  const isActive = (tab: SupportTabsE) => {
+    return tabSelection === tab;
   };
+
+  const formatForm = () => {
+    return `
+      Name: ${name},
+      Email: ${email},
+      ${isActive(SupportTabsE.SIGN) ? 'Address: ' + address : null}
+      Message: ${message}
+    `
+  }
+
+  const formatHtmlForm = () => {
+    return `
+      <p>Name: ${name},</p> </br>
+      <p>Email: ${email},</p> </br>
+      ${isActive(SupportTabsE.SIGN) ? `<p>Address: ${address}</p> <br/>` : null}
+      <p>Message: ${message}</p>
+    `
+  }
+
+  const submit = async (tab: SupportTabsE) => {
+    const refs = [nameRef, emailRef, addressRef, messageRef]
+    const validate = refs.map((ref: React.MutableRefObject<any>) => {
+      return ref.current.validate();
+    })
+    if (validate.some(value => value)) {
+      return false;
+    }
+  }
 
   return (
     <div className="support flex column center">
@@ -45,21 +63,38 @@ function Support() {
             value={name}
             label={"Name"}
             placeholder={"First & Last"}
+            ref={nameRef}
+            validate={[InputValidationE.REQUIRED]}
             setValue={setName}
           />
           <Input
             value={email}
             label={"Email"}
+            validate={[InputValidationE.REQUIRED, InputValidationE.EMAIL]}
             placeholder={"example@gmail.com"}
+            ref={emailRef}
             setValue={setEmail}
           />
+          {isActive(SupportTabsE.SIGN) && (
+            <Input
+              value={address}
+              label={"Address"}
+              validate={[InputValidationE.REQUIRED]}
+              placeholder={"50 Example Road NE"}
+              ref={addressRef}
+              setValue={setAddress}
+            />
+          )}
           <Input
-            value={address}
-            label={"Address"}
-            placeholder={"50 Example Road NE"}
-            setValue={setAddress}
+            value={message}
+            isTextArea={true}
+            validate={[InputValidationE.REQUIRED]}
+            label={"Comment / Message"}
+            placeholder={"Enter your message here."}
+            ref={messageRef}
+            setValue={setMessage}
           />
-          {getTab()}
+          <Button variant={ButtonTypeE.SOLID} text={'Submit'} onClick={() => submit(tabSelection)} />
         </div>
       </div>
     </div>
