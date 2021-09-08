@@ -20,6 +20,13 @@
   }
 }
 
+.times {
+  position: absolute;
+  right: 0;
+  top: 0; 
+  margin: 20px 32px; 
+}
+
 .nav-menu {
   position: fixed;
   top: 0;
@@ -35,6 +42,30 @@
   width: 80vw;
 }
 
+.links-phone {
+  position: absolute;
+  background-color: $navy;
+  top: 0;
+  bottom: 0;
+  padding-top: 20px;
+  left: 0;
+  width: 100%;
+  z-index: 2000;
+
+  a {
+    text-decoration: none;
+    color: $white;
+    margin: 0 15px;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 20px;
+
+    &.active {
+      color: $yellow;
+    }
+  }
+}
+
 button {
   &.solid {
     background-color: $navy;
@@ -44,4 +75,14 @@ button {
     border: none;
     font-size: 14px;
   }
+
+  &.outline {
+    border: 1px solid $navy;
+    background-color: $white;
+    color: $navy;
+    font-weight: medium;
+    padding: 6px 15px;
+    font-size: 14px;
+  }
+
 }

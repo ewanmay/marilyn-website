@@ -1,9 +1,9 @@
 import React from "react";
 
 export enum SupportTabsE {
-  SIGN = "Request for sign",
-  VOLUNTEER = "Request to volunteer",
-  DONATE = "Request to donate",
+  SIGN = "request for sign",
+  VOLUNTEER = "request to volunteer",
+  DONATE = "request to donate",
 }
 
 interface SupportProps {

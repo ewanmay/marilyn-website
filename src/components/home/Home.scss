@@ -1,4 +1,4 @@
-@import '../../App.scss';
+@import "../../App.scss";
 
 .home {
   align-content: initial;
@@ -38,7 +38,6 @@
   right: 0;
   width: 100%;
   left: 0;
-  height: 200px;
   object-fit: cover;
 }
 
@@ -103,12 +102,54 @@
     font-size: 14px;
     line-height: 21px;
     margin: 10px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $navy;
   }
   .link {
     text-decoration: underline;
+    cursor: pointer;
+    text-align: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
+    
+    &:hover {
+      font-weight: 600;
+    }
+  }
+  .commitment {
+    border: 5px solid $navy;
+    padding: 23px;
+    font-size: 14px;
+    margin: 20px 6px;
+    position: relative;
+    .label {
+      font-weight: bold;
+      padding: 2px 15px;
+      position: absolute;
+      top: -19px;
+      left: -10px;
+    }
+  }
+
+  .subpoint {
+    .title {
+      font-size: 16px;
+      margin: 16px 0 8px 0;
+    }
+    .item {
+      font-size: 14px;
+      line-height: 24px;
+      padding: 10px 0 10px 40px;
+      position: relative;
+      text-align: left;
+
+      .bullet {
+        position: absolute;
+        left: 0;
+        bottom: calc(50% - 13px);
+      }
+    }
   }
 }
 

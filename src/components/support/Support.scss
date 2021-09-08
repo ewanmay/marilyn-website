@@ -25,6 +25,11 @@
   }
 }
 
+.error {
+  font-size: 14px;
+  font-weight: normal;
+  color: $red;
+}
 .input-container {
   width: 100%;
 
@@ -32,12 +37,12 @@
     font-size: 14px;
     font-weight: bold;
   }
+}
 
-  .error {
-    font-size: 14px;
-    font-weight: normal;
-    color: $red;
-  }
+.success {
+  font-size: 14px;
+  font-weight: normal;
+  color: green;
 }
 
 // -------------------------------
@@ -48,7 +53,7 @@
 
 .tabs {
   width: 100%;
-  font-size: 14px;
+  font-size: 16px;
   height: 100%;
 
   @media (min-width: 768px) {
@@ -56,6 +61,7 @@
   }
   @media (max-width: 768px) {
     flex-direction: row;
+    margin-bottom: 0;
   }
 
   .tab {
@@ -87,16 +93,46 @@
 .support-header {
   width: 100%;
   position: relative;
-  min-height: 150px;
+  height: 150px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('./support-header.svg');
+  background-size: auto 100%;
+  background-image: url("./support-header.svg");
+  
+  @media (min-width: 768px) {
+    margin-bottom: 40px;
+  }
 
   .text {
     padding: 6px 50px;
     background-color: $white;
     border-radius: 8px;
     font-weight: bold;
+  }
+}
+
+.spinner {
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  height: 14px;
+  width: 14px;
+  margin-left: 10px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

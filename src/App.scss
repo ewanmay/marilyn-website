@@ -18,6 +18,9 @@ $red: #df4545;
   /* z-index: 1000;
   margin-left: 10%;
   margin-right: 10%; */
+  &.phone-nav-open {
+    overflow-y: hidden;
+  }
 }
 
 .bold {
