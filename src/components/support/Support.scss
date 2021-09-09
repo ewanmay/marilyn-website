@@ -1,0 +1,154 @@
+@import "../../App.scss";
+// -------------------------------
+//
+//            INPUT
+//
+// -------------------------------
+.inputs {
+  border-left: 3px solid $navy;
+  padding-left: 40px;
+  padding-bottom: 10vh;
+
+  p {
+    
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+  }
+}
+
+.input {
+  padding: 8px;
+  margin: 5px 0 20px 0;
+  border: solid 1px $navy;
+  width: 100%;
+  font-size: 14px;
+
+  &:focus-visible {
+    outline: solid 1px $navy;
+  }
+
+  &::placeholder {
+    font-size: 14px;
+  }
+}
+
+.error {
+  font-size: 14px;
+  font-weight: normal;
+  color: $red;
+}
+.input-container {
+  width: 100%;
+
+  .label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.success {
+  font-size: 14px;
+  font-weight: normal;
+  color: green;
+}
+
+// -------------------------------
+//
+//            TABS
+//
+// -------------------------------
+
+.tabs {
+  width: 100%;
+  font-size: 16px;
+  height: 100%;
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+  }
+  @media (max-width: 768px) {
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+
+  .tab {
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    min-width: 160px;
+    color: $navy;
+    background-color: $white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $light-blue;
+    }
+
+    &.active {
+      background-color: $navy;
+      color: $white;
+    }
+  }
+}
+
+// -------------------------------
+//
+//            HEADER
+//
+// -------------------------------
+
+.support {
+  padding-bottom: 10vh;
+}
+
+.support-header {
+  width: 100%;
+  position: relative;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-image: url("./support-header.svg");
+
+  @media (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+  .text {
+    padding: 6px 50px;
+    background-color: $white;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+}
+
+.spinner {
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  height: 14px;
+  width: 14px;
+  margin-left: 10px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

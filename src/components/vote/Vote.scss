@@ -1,0 +1,51 @@
+@import "../../App.scss";
+
+.vote {
+  @media (min-width: 768px) {
+    padding-top: 30px;
+  }
+  h4 {
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 46px;
+  }
+
+  h5 {
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  a {
+    color: $blue;
+    font-size: 16px;
+    line-height: 20px;
+    word-break: break-all;
+  }
+
+  margin-top: 3vh;
+}
+
+.map-container {
+  background: rgb(250, 250, 250);
+  margin-top: 20px;
+
+  h4 {
+    text-decoration: underline;
+    font-size: 22px;
+    padding: 20px 0 0 0;
+  }
+  button {
+    margin: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 14px;
+    color: $navy;
+    padding: 4px 8px;
+  }
+}
+
+.map {
+  height: 50vh;
+}

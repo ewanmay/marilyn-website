@@ -1,0 +1,170 @@
+@import "../../App.scss";
+
+.about-message {
+  margin: 50px;
+  font-size: 19px;
+  line-height: 28px;
+}
+
+// -------------------------------
+//
+//            ABOUT-HEADER
+//
+// -------------------------------
+.about-hero {
+  height: 60vh;
+  @media (min-width: 768px) {
+    background-image: url("./about-header.jpg");
+  }
+  @media (max-width: 768px) {
+    background-image: url("./about-header-cropped.jpg");
+  }
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.about-hero-shader {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.164);
+}
+
+.about-dec {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  
+}
+
+.about-hero-content {
+  position: relative;
+  @media (min-width: 768px) {
+    padding: 10px 105px;
+  }
+  @media (max-width: 768px) {
+    padding: 10px 10px 10px 30px;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 43px;
+    margin: 0;
+  }
+
+  h5 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+// -------------------------------
+//
+//            QUOTE
+//
+// -------------------------------
+
+.quote {
+  padding: 20px 10px;
+  margin: 20px 0;
+  border: solid 9px $yellow;
+}
+
+// -------------------------------
+//
+//        COMMITTEE LIST
+//
+// -------------------------------
+
+.committee-list {
+  padding-left: 32px;
+  margin-bottom: 4vh;
+  width: 100%;
+  border-left: solid 4px $yellow;
+
+  h4 {
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+
+  .item {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 10px 10px 20px;
+    position: relative;
+    text-align: left;
+
+    .bullet {
+      position: absolute;
+      left: 0;
+      bottom: calc(50% - 4.5px);
+      width: 11px;
+      height: 11px;
+      background-color: $yellow;
+      border: solid 3.5px $navy;
+      border-radius: 50%;
+    }
+  }
+}
+
+// -------------------------------
+//
+//            PARAGRAPH
+//
+// -------------------------------
+
+.paragraph {
+  padding: 30px;
+  margin: 30px 0;
+  text-align: left;
+  position: relative;
+  .title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 20px;
+  }
+
+  .body {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &.left {
+    background-color: $light-blue;
+    color: $navy;
+
+    > span {
+      position: absolute;
+      left: -10px;
+      bottom: 0;
+      right: 100%;
+      top: 0;
+      background-color: $yellow;
+    }
+  }
+
+  &.right {
+    background-color: $navy;
+    color: $white;
+
+    > span {
+      position: absolute;
+      left: 100%;
+      bottom: 0;
+      right: -10px;
+      top: 0;
+      background-color: $yellow;
+    }
+  }
+}
