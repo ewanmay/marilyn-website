@@ -25,7 +25,7 @@ function Support() {
   };
 
   const getSupportText = () => {
-    if (tabSelection === SupportTabsE.DONATE) {
+    if (tabSelection === SupportTabsE.VOLUNTEER) {
       return "Volunteer support is essential to running an effective campaign.  Every hour counts!  Fill out this form to let us know you’re interested.";
     } else if (tabSelection === SupportTabsE.SIGN) {
       return "If you would like a lawn sign, please fill out this form and we’ll make sure you get one!";

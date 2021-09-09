@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Common.scss";
 import { NavLink } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
-import { useState } from "react";
 
 interface NavProps {
   setPhoneNavOpen: (x: boolean) => void;

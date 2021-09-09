@@ -17,6 +17,7 @@ function PrioritiesList() {
           subpoints: [
             "Board system and administrative spending is capped by the Province and the CBE consistently falls below that cap.  CBE has the lowest per student spending on Board system and administration among our comparators.",
             "Over the last four years, we have further reduced central office staff – moving directors to area offices and teachers back into school based positions where they provide more direct support to schools and students.",
+            "I supported a budget for the 2021/22 school year that saw an additional $3 million allocated away from administration expenses and re-directed to schools."
           ],
         },
       ],
@@ -31,7 +32,7 @@ function PrioritiesList() {
       points: [
         {
           title:
-            "Significant progress has been made toward focussing resources directly to schools.",
+            "Celebrating and recognizing diversity is not a replacement for expecting that inequities be addressed.  During my first term, I have been a steady advocate that if we are going to remove barriers to success, we first need to understand what those barriers are and then allocate resources in a way that will have impact. I have advanced this work through:",
           subpoints: [
             "Hiring of our Chief Superintendent who brought with him considerable experience in the advancement of equity in a school system.",
             "Significant changes to Results 2 – Academic Success Policy which will provide Trustees with higher quality data and analysis allowing the Board to see how groups of students achieve over time. ",
