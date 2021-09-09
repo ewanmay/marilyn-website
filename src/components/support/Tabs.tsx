@@ -26,7 +26,7 @@ function Support({ value, setValue }: SupportProps) {
   };
 
   return (
-    <div className="tabs">
+    <div className="tabs flex">
       {tabs.map(({ value, label }) => (
         <div
           onClick={() => setValue(value)}

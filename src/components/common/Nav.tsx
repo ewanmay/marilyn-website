@@ -24,17 +24,35 @@ function Nav({ setPhoneNavOpen }: NavProps) {
           />
           {isDesktopOrLaptop && (
             <div className="links flex right">
-              <NavLink activeClassName="active" to="/home">
+              <NavLink
+                activeClassName="active"
+                to="/home"
+                location={{
+                  pathname: document.location.pathname + document.location.hash,
+                  search: "",
+                  state: "",
+                  hash: "",
+                }}
+              >
                 HOME
+              </NavLink>
+              <NavLink
+                activeClassName="active"
+                to="/home#priorities"
+                isActive={() => {
+                  return window.location.hash === "#priorities";
+                }}
+              >
+                PRIORITIES
               </NavLink>
               <NavLink activeClassName="active" to="/about">
                 ABOUT MARILYN
               </NavLink>
-              <NavLink activeClassName="active" to="/priorities">
-                PRIORITIES
-              </NavLink>
               <NavLink activeClassName="active" to="/support">
                 SUPPORT
+              </NavLink>
+              <NavLink activeClassName="active" to="/vote">
+                VOTE
               </NavLink>
             </div>
           )}
@@ -68,6 +86,12 @@ function Nav({ setPhoneNavOpen }: NavProps) {
           <NavLink
             activeClassName="active"
             to="/home"
+            location={{
+              pathname: document.location.pathname + document.location.hash,
+              search: "",
+              state: "",
+              hash: "",
+            }}
             onClick={() => {
               setPhoneNavOpen(false);
               setIsOpen(false);
@@ -87,7 +111,10 @@ function Nav({ setPhoneNavOpen }: NavProps) {
           </NavLink>
           <NavLink
             activeClassName="active"
-            to="/priorities"
+            to="/home#priorities"
+            isActive={() => {
+              return window.location.hash === "#priorities";
+            }}
             onClick={() => {
               setPhoneNavOpen(false);
               setIsOpen(false);
@@ -104,6 +131,16 @@ function Nav({ setPhoneNavOpen }: NavProps) {
             }}
           >
             SUPPORT
+          </NavLink>
+          <NavLink
+            activeClassName="active"
+            to="/vote"
+            onClick={() => {
+              setPhoneNavOpen(false);
+              setIsOpen(false);
+            }}
+          >
+            VOTE
           </NavLink>
         </div>
       )}

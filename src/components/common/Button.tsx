@@ -7,13 +7,14 @@ export enum ButtonTypeE {
 
 interface ButtonProps {
   onClick: () => void,
-  text: string,
+  text?: string,
   variant: ButtonTypeE,
-  isLoading?: Boolean
+  isLoading?: Boolean,
+  children?: React.ReactNode
 }
 
-function Button({ text, onClick, variant, isLoading }: ButtonProps) {
-  return <button className={variant} onClick={onClick}>{text}{isLoading && (<img className="spinner" src="/images/spinner.svg" alt="loading"/>)}</button>;
+function Button({ text, onClick, variant, isLoading, children }: ButtonProps) {
+  return <button className={variant} onClick={onClick}>{text}{isLoading && (<img className="spinner" src="/images/spinner.svg" alt="loading"/>)}{children}</button>;
 }
 
 export default Button;

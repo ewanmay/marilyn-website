@@ -4,7 +4,11 @@ import "./Home.scss";
 import Message from "./Message";
 import PrioritiesList from "./PrioritiesList";
 
-function Home() {
+interface HomeProps {
+  refProps: any;
+}
+
+function Home({ refProps }: HomeProps) {
   return (
     <div className="home col-12 flex center">
       <div className="col-12">
@@ -12,7 +16,7 @@ function Home() {
       </div>
       <div className="col-10 col-lg-6 flex column">
         <Message />
-        <PrioritiesList />
+        <PrioritiesList refProps={refProps} />
       </div>
     </div>
   );

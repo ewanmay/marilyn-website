@@ -14,10 +14,6 @@ $red: #df4545;
   background-color: white;
   transition: transform 200ms ease 0s;
   user-select: none;
-  overflow-y: auto;
-  /* z-index: 1000;
-  margin-left: 10%;
-  margin-right: 10%; */
   &.phone-nav-open {
     overflow-y: hidden;
   }
@@ -59,6 +55,7 @@ $red: #df4545;
 .left {
   justify-content: flex-start;
   align-items: flex-start;
+  text-align: left;
 }
 
 .right {

@@ -7,6 +7,18 @@
 .inputs {
   border-left: 3px solid $navy;
   padding-left: 40px;
+  padding-bottom: 10vh;
+
+  p {
+    
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+  }
 }
 
 .input {
@@ -61,7 +73,7 @@
   }
   @media (max-width: 768px) {
     flex-direction: row;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
   .tab {
@@ -90,6 +102,10 @@
 //
 // -------------------------------
 
+.support {
+  padding-bottom: 10vh;
+}
+
 .support-header {
   width: 100%;
   position: relative;
@@ -98,7 +114,7 @@
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-image: url("./support-header.svg");
-  
+
   @media (min-width: 768px) {
     margin-bottom: 40px;
   }

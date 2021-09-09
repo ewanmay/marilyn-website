@@ -1,7 +1,10 @@
 import React from "react";
 import PrioritiesItem from "./PrioritiesItem";
 
-function PrioritiesList() {
+interface PrioritiesListProps {
+  refProps: any;
+}
+function PrioritiesList({ refProps }: PrioritiesListProps) {
   const priorities = [
     {
       title: "Supporting Students",
@@ -17,7 +20,7 @@ function PrioritiesList() {
           subpoints: [
             "Board system and administrative spending is capped by the Province and the CBE consistently falls below that cap.  CBE has the lowest per student spending on Board system and administration among our comparators.",
             "Over the last four years, we have further reduced central office staff – moving directors to area offices and teachers back into school based positions where they provide more direct support to schools and students.",
-            "I supported a budget for the 2021/22 school year that saw an additional $3 million allocated away from administration expenses and re-directed to schools."
+            "I supported a budget for the 2021/22 school year that saw an additional $3 million allocated away from administration expenses and re-directed to schools.",
           ],
         },
       ],
@@ -91,7 +94,7 @@ function PrioritiesList() {
   ];
 
   return (
-    <div className="priorities-list">
+    <div ref={refProps} className="priorities-list" id="priorities" >
       <h4 className=" flex column center">
         Marilyn's Priorities <span className="underline" />
       </h4>
