@@ -7,14 +7,16 @@ function Vote() {
     <div className="vote flex center">
       <div className=" col-lg-6 col-10">
         <h4 className="flex column center">
-          Voter information <span className="underline" />
+          Voter Information <span className="underline" />
         </h4>
         <h5 className="flex left">
-          For information on polling station location and ward boundaries,
+          For information on polling station locations and ward boundaries,
           please visit Information for Voters on the City of Calgary website.
         </h5>
         <a
           className="flex"
+          target="_blank"
+          rel="noreferrer"
           href="https://www.calgary.ca/election/information-for-voters/when-and-where-to-vote.html
         "
         >

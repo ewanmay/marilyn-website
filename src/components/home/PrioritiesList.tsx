@@ -16,10 +16,10 @@ function PrioritiesList({ refProps }: PrioritiesListProps) {
       points: [
         {
           title:
-            "Significant progress has been made toward focussing resources directly to schools.",
+            "Since I became trustee in 2017, significant progress has been made toward focussing resources directly to schools.",
           subpoints: [
             "Board system and administrative spending is capped by the Province and the CBE consistently falls below that cap.  CBE has the lowest per student spending on Board system and administration among our comparators.",
-            "Over the last four years, we have further reduced central office staff – moving directors to area offices and teachers back into school based positions where they provide more direct support to schools and students.",
+            "Over the last four years, central office staff has been further reduced – moving directors to area offices and teachers back into school based positions where they provide more direct support to schools and students.",
             "I supported a budget for the 2021/22 school year that saw an additional $3 million allocated away from administration expenses and re-directed to schools.",
           ],
         },
@@ -86,7 +86,7 @@ function PrioritiesList({ refProps }: PrioritiesListProps) {
           subpoints: [
             "Placed students and educators first by making the decision to not pilot the draft curriculum while students and teachers continue to grapple with the disruption associated with the COVID-19 global pandemic.",
             "Due to concerns regarding the content of the draft curriculum, advocated for a delay in the implementation of the curriculum until it can be revisited and adjusted.",
-            "Support a thorough review of the draft curriculum by the CBE.  As the largest school board in the province, it is important that CBE provides robust feedback to Alberta Education on the content of the curriculum.  This review will take place in the fall of 2021",
+            "Support a thorough review of the draft curriculum by the CBE.  As the largest school board in the province, it is important that CBE provides robust feedback to Alberta Education on the content of the curriculum.  This review will take place in the fall of 2021.",
           ],
         },
       ],

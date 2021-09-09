@@ -1,10 +1,10 @@
 const text = {
-  p1title: 'Marilyn values strong neighbourhood schools and the vast choice that the CBE offers as families seek programs to best suit their child’s learning needs and interests',
+  p1title: 'Marilyn values strong neighbourhood schools and the vast choice that the CBE offers as families seek programs to best suit their child’s learning needs and interests.',
   p1body: 'Marilyn grew up in Calgary and is a proud Calgary Board of Education graduate.  She and her husband have called Monterey Park home for 27 years.  Their three daughters are all CBE graduates, who attended their neighbourhood school regular program and also a CBE program of choice.  She was a ‘dance mom’, ‘band mom’ and ‘student athlete mom’ who also held high expectations for academic achievement, believing that all students have the capacity to succeed.',
   p2title: 'Marilyn believes strongly that public education changes lives and creates opportunities.',
   p2body: 'She spent over 13 years supporting young people in their pursuit of academic, athletic and artistic excellence by taking on various leadership roles - School Council Chair, Parents Association President, Treasurer, Fundraising Director, advocate and more. Marilyn led the design and installation of the Monterey Park School and community playground and spent several years working with a non-profit focussed on providing educational enrichment opportunities specifically for NE Calgary students where those opportunities would not have been possible otherwise.',
-  p3title: 'Marilyn understands the unique challenges faced by schools in Wards 5 & 10',
-  p3body: 'As your Trustee, Marilyn rem ns closely connected to parents, students, schools and educators. Along with her own extensive  first-hand experience, these critical relationships continue to informMarilyn’s work as your Trustee.  One of  Marilyn’s daughters is a teacher and she has several family members and friends who teach and work in schools locally and across Alberta, broadening both her local and provincial perspective.'
+  p3title: 'Marilyn understands the unique challenges faced by schools in Wards 5 & 10.',
+  p3body: 'As your Trustee, Marilyn remains closely connected to parents, students, schools and educators. Along with her own extensive first-hand experience, these critical relationships continue to inform Marilyn’s work as your Trustee. Marilyn has several family members and friends who teach and work in schools locally and across Alberta, broadening both her local and provincial perspective.'
 }
 
 export default text;

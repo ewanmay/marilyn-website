@@ -1,6 +1,9 @@
-@import '../../App.scss';
+@import "../../App.scss";
 
 .vote {
+  @media (min-width: 768px) {
+    padding-top: 30px;
+  }
   h4 {
     font-weight: bold;
     font-size: 29px;
@@ -24,23 +27,24 @@
 
 .map-container {
   background: rgb(250, 250, 250);
+  margin-top: 20px;
+
   h4 {
     text-decoration: underline;
     font-size: 22px;
-    padding: 20px 0 0 0 ;
+    padding: 20px 0 0 0;
   }
   button {
     margin: 10px;
   }
 
-  a {    
+  a {
     text-decoration: none;
     font-size: 14px;
     color: $navy;
     padding: 4px 8px;
   }
 }
-
 
 .map {
   height: 50vh;

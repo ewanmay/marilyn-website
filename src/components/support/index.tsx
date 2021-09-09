@@ -30,7 +30,7 @@ function Support() {
     } else if (tabSelection === SupportTabsE.SIGN) {
       return "If you would like a lawn sign, please fill out this form and we’ll make sure you get one!";
     } else {
-      return "Trustee campaigns are funded by the candidate and those individuals who offer support. Only Alberta residents can donate to election campaigns.  Donations cannot be accepted from corporations or unincorporated organizations or groups and are unfortunately not eligible for tax rebates.";
+      return "Trustee campaigns are funded by the candidate and those individuals who offer support. Only Alberta residents can donate to election campaigns.  Donations cannot be accepted from corporations or unincorporated organizations or groups and are unfortunately not eligible for tax rebates. If you're interested in making a donation to Marilyn's campaign, please fill out this form.";
     }
   };
 
